@@ -1,0 +1,39 @@
+body {
+	background: #FFFFFF;
+}
+
+$base_font_size: 10pt;
+
+.noprint { display: none; }
+.donald { 
+	font-size: $base_font_size + 4;
+	color: #464443;
+}
+.article-title {
+	font-size: $base_font_size + 10pt;
+	margin-bottom: 40px;
+}
+.page { 
+	font-size: $base_font_size; 
+	width: 75%;
+}
+h1 {
+	font-size: $base_font_size + 8pt;
+}
+
+h2 {
+	font-size: $base_font_size + 4pt;
+}
+
+h3 {
+	font-size: $base_font_size;
+}
+textarea, pre {
+	font-size: $base_font_size - 2pt;
+}
+ul, ol {
+	font-size: $base_font_size;
+}
+footer {
+	font-size: $base_font_size - 2;
+}

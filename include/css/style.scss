@@ -1,0 +1,146 @@
+/* define some basic variables */
+$background: #FFF7F3;
+$text: #464443;
+$link: #9F8880;
+$selected: #7F007F;
+
+$base_font_size: 16pt;
+
+$page_width: 800px;
+
+/* HTML DEFAULT OVERRIDES FOLLOW */
+
+/* got to have this for relative widths annd heights */
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: $background;
+	color: $text;
+	font-family: Georgia, Serif;
+	font-size: $base_font_size;
+}
+
+/* navigation buttons */
+nav {
+	font-size: $base_font_size + 2pt;
+	text-align: center;
+}
+
+article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* goes below the content */
+footer {
+	margin: 100px 0 10px 0;
+	text-align: center;
+	font-size: $base_font_size - 6pt;
+}
+
+
+a {
+	text-decoration: none;
+	color: $link;
+	&:hover { color: lighten($link, 25%); }
+}
+
+h1 {
+	font-size: $base_font_size + 8pt;
+}
+
+h2 {
+	font-size: $base_font_size + 4pt;
+}
+
+h3 {
+	font-size: $base_font_size;
+}
+
+textarea, pre {
+	font-size: $base_font_size - 4pt;
+}
+
+ul, ol {
+	font-size: $base_font_size - 2pt;
+}
+
+p {
+	line-height: 140%;
+}
+
+/* CUSTOM PAGE ELEMENTS FOLLOW */
+
+/* top of the header */
+.donald {
+	width: 100%; /* of the body */
+	text-align: center;
+	font-size: $base_font_size + 8pt;
+	background: $text;
+	color: $background;
+	a { color: $background; }
+}
+
+/* all content is contained in the page */
+.page {
+	width: $page_width;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* there are four of these in a row in the top NAV */
+.context {
+	float: left;
+	width: 21%;  /* of the page */
+	margin: 7px 2% 0 2%;
+}
+
+.above-article {
+	margin-top: 15px;
+	padding: 0px 10px 0px 10px;
+	border: thin dotted lighten($text, 50%);
+	border-radius: 8px;
+	background: darken($background, 2%);
+	p, h1 {
+		margin: 10px 0px 10px 0px;
+	}
+}
+
+/* the title of the selected item */
+.article-title {
+	margin: 40px 0 20px 0;
+	text-align: center;
+	font-weight: normal;
+	font-size: $base_font_size + 10pt;
+}
+
+/* info such as date, author, tags, etc. */
+.article-metadata {
+	font-style: oblique;
+	color: lighten($text, 30%);
+}
+
+/* generic - anything that's been selected */
+.selected {	
+	font-weight: bold;
+	color: $selected;
+}
+
+.half-left {
+	width: 48%;
+	float:left;
+}
+
+.oblique { font-style: oblique; }
+.center { text-align: center; }
+.right { float: right; }
+.left { float: left; }
+.pad-right { padding-right: 20px; }
+
+/* just here to fix any floatin' */
+.clf { clear: both; }
